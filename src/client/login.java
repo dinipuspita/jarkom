@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package e_publishing;
+package client;
 
 
 
@@ -221,7 +221,17 @@ public class login extends javax.swing.JFrame {
             if(rs.next()){
                 if(user.getText().equals(rs.getString("username")) && pass.getText().equals(rs.getString("password"))){
                     JOptionPane.showMessageDialog(null, "Berhasil login");
+                    String userName = user.getText().trim();
+                    Registry re = LocateRegistry.getRegistry("localhost", 5001);
+                    rmi.Method rmi = (rmi.Method) re.lookup("raven");
                     new chat().setVisible(true);
+//                    if (rmi.checkName(userName)) {
+//                        Method.connect(profile_pic, userName, "localhost");
+//                        this.dispose();
+//                        new chat().setVisible(true);
+//                    } else {
+//                       System.out.println("erro");
+//                    }
                 }
             }else{
                     JOptionPane.showMessageDialog(null, "username atau password salah");

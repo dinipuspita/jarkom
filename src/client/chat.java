@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package e_publishing;
+package client;
 
 /**
  *
@@ -11,6 +11,7 @@ package e_publishing;
  */
 public class chat extends javax.swing.JFrame {
 
+  
     /**
      * Creates new form server
      */
@@ -45,8 +46,6 @@ public class chat extends javax.swing.JFrame {
         jLabel1.setText("Info IT");
 
         jPanel2.setBackground(new java.awt.Color(0, 153, 153));
-
-        jButton1.setIcon(new javax.swing.ImageIcon("D:\\kirim1.png")); // NOI18N
 
         jButton2.setText("Pilih File");
 

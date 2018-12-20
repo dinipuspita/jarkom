@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package e_publishing;
+package client;
 
 import java.awt.Color;
 import java.awt.Dimension;
